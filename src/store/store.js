@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
     state: {
-        contacts: [], // All to do contacts
+        contacts: [], // All contacts
     },
     mutations: {
         addContact(state, i){

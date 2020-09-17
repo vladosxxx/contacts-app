@@ -6,7 +6,7 @@
           type="text"
           v-model="name"
           placeholder="Введите имя контакта"
-          v-on:keyup.enter="addContact()"
+          v-on:keyup.enter="addContact"
         >
       </div>
       <div>
@@ -14,26 +14,23 @@
           type="number"
           v-model="number"
           placeholder="Введите номер телефона контакта"
-          v-on:keyup.enter="addContact()"
+          v-on:keyup.enter="addContact"
         >
       </div>
       <button
         type="submit"
-        v-on:click="addContact()"
-      >
-        <img src="../assets/add.svg" alt="Add contact"
-           height="20px"
-           width="20px">
-    </button>
+        v-on:click="addContact"
+        style="background: #41AA3C"
+      >Добавить контакт</button>
     </div>
     <ul>
       <li v-for="(storeContact, index) in storeContacts"
           v-bind:key="index"
       >
         <div>{{ storeContact.name }}</div>
-        <div class="number">{{ storeContact.number }}</div>
+        <div>{{ storeContact.number }}</div>
         <div class="buttons">
-          <button v-on:click="delContact(index)">Удалить</button>
+          <button v-on:click="delContact(index)" style="margin-right: 5px; background: #FF5733;">Удалить</button>
           <router-link :to="{name: 'Change', params: {id: index}}" tag="button">Информация</router-link>
         </div>
       </li>
