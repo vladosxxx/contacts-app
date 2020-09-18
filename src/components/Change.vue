@@ -79,11 +79,13 @@ export default {
       this.fieldLocals.splice(i,1)
     },
     editField(fieldEditing){ // Редактируем поля
+      // Делаем независимый дубликат поля перед редактированием
       this.beforeEditingCache = Object.assign({}, fieldEditing);
       this.editFields = fieldEditing
     },
     fieldCancel(fieldEditing){ // Отменяем редактирование поля
       if(confirm('Отменить изменения поля?')) {
+        // Перезаписываем первичные данные вместо измененных
         Object.assign(fieldEditing, this.beforeEditingCache);
         this.editFields = this.editText = this.beforeEditingCache = null;
       }
