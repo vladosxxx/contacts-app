@@ -1,24 +1,34 @@
-# contacts
+# Contacts
+Simple contacts manager
 
-## Project setup
-```
-npm install
-```
+## Getting Started
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
-### Compiles and minifies for production
+### Tech
+Technologies used in project
+
+
+### Instaling
+
+Download or clone project
+
 ```
+git clone https://github.com/vladosxxx/contacts-app.git
+```
+Then go to folder project 
+```
+cd contacts-app
+```
+To develop run
+```
+npm run install
 npm run build
 ```
+### Preview
+ ![Alt Text]()
 
-### Lints and fixes files
-```
-npm run lint
-```
+License
+----
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+MIT
