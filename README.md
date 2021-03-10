@@ -8,6 +8,11 @@ These instructions will get you a copy of the project up and running on your loc
 ### Tech
 Technologies used in project
 
+- JavaScript
+- Vue
+- Vuex
+- Vue Router
+
 
 ### Instaling
 
@@ -20,9 +25,11 @@ Then go to folder project
 ```
 cd contacts-app
 ```
-To develop run
+Run project
 ```
 npm run install
+```
+```
 npm run build
 ```
 ### Preview
